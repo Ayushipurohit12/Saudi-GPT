@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
-
 import '../Assets/slider.css';
 import Aos from "aos";
-
-
 function Slider() {
 useEffect(() => {
         Aos.init();

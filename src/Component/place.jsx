@@ -6,7 +6,7 @@ function Place() {
         <>
             <section>
            <div className="mt-5">
-            <video src="/Assets/WhatsApp Video 2024-03-18 at 2.37.22 PM.mp4" autoPlay="false" loop className="video"/>
+            <video src="/Assets/WhatsApp Video 2024-03-18 at 2.37.22 PM.mp4" autoPlay  loop className="video"/>
                 <div className="p-0 d-flex justify-content-between  text-light">
                     <div className="p-1">
                         <h2 >Not JUST A Desert</h2>

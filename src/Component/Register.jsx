@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../Assets/register.css'
+import Aos from "aos";
 function Register(){
+  useEffect(() => {
+    Aos.init();
+  }, []);
     return(
     <section>
         <div className="d-flex justify-content-between mt-5 ">
-            <img src="/Assets/images.jpg"  className="w-50 r-1"/>
+            <img src="/Assets/images.jpg"  className="w-50 r-1 " data-aos="fade-right"  data-aos-delay="500" />
                <div className="px-2 text-danger r-2">
                      <h1 className="p-2">REGISTER RIGHT AWAY </h1>
                      <div className="p-2">

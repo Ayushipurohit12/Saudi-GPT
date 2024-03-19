@@ -6,7 +6,6 @@ import Slider from "../Component/slider";
 import Place from "../Component/place";
 import Register from "../Component/Register";
 import Footer from "../Component/footer";
-import ScrollAndPlayVideo from "../Component/ScrollAndPlayVideo ";
 
 function Homepage(){
     return(
@@ -17,7 +16,6 @@ function Homepage(){
 <Place />
 <Register />
 <Footer />
-<ScrollAndPlayVideo />
 </>
     );
 }
