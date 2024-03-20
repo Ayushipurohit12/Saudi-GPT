@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import '../Assets/slider.css';
 import Aos from "aos";
+import Layout from "./layout";
 function Slider() {
 useEffect(() => {
         Aos.init();
@@ -12,6 +13,9 @@ useEffect(() => {
         <div className="d-flex justify-content-between mt-5 ">
             <div className="bg-danger w-50 ">
             <div className="s-0 border-2 bg-body rounded-4  mt-3 mb-3">
+                <div>
+                    
+                </div>
                 <div className="s-1 ">
                  <div className=" text-danger fs-6 p-3 mt-5 " >
                     <div className='s-2 '>

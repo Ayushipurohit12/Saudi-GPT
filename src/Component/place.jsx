@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import  '../Assets/place.css'
 
 function Place() {
+    const videoEl = useRef(null);
+
+    useEffect(() => {
+      if (videoEl.current) {
+        videoEl.current.play().catch(error => {
+          console.error("Error attempting to play", error);
+        });
+      }
+    }, []);
     return (
         <>
+
             <section>
            <div className="mt-5">
-            <video src="/Assets/WhatsApp Video 2024-03-18 at 2.37.22 PM.mp4" autoPlay  loop className="video"/>
+           <video 
+          className="video"
+          playsInline
+          loop
+          muted
+          alt="All the devices"
+          src="/Assets/WhatsApp Video 2024-03-18 at 2.37.22 PM.mp4"
+          ref={videoEl}
+        />
                 <div className="p-0 d-flex justify-content-between  text-light">
                     <div className="p-1">
                         <h2 >Not JUST A Desert</h2>

@@ -1,10 +1,21 @@
-import React, { useEffect } from "react";
-
+import React, { useEffect, useRef } from "react";
 import '../Assets/home.css'
 import Aos from "aos";
 
 
 function Home() {
+
+    const videoEl = useRef(null);
+
+    useEffect(() => {
+      if (videoEl.current) {
+        videoEl.current.play().catch(error => {
+          console.error("Error attempting to play", error);
+        });
+      }
+    }, []);
+
+
 useEffect(() => {
         Aos.init();
       }, []);
@@ -12,6 +23,15 @@ useEffect(() => {
     return (
         <>
             <section className="hero"  >
+          <video
+          className="media"
+          playsInline
+          loop
+          muted
+          alt="All the devices"
+          src="/Assets/WhatsApp Video 2024-03-18 at 2.37.22 PM.mp4"
+          ref={videoEl}
+        />
                 <div className="home text-danger h-100 aos-init  " data-aos="fade-up" data-aos-delay="500">
                     <h1 className="fw-bold d-flex ">DISCOVER</h1>
                     <h1 className="fw-bold">SAUDI ARABIA</h1>

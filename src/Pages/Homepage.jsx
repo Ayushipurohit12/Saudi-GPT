@@ -16,6 +16,7 @@ function Homepage(){
 <Place />
 <Register />
 <Footer />
+
 </>
     );
 }
